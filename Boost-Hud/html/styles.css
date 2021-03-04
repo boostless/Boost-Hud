@@ -1,0 +1,90 @@
+#statusHud {
+	width: 14.2%;
+	position: absolute;
+	bottom: 0.2%;
+    left: 0.1%;
+	 /*border: 1px solid red; */
+}
+
+#varHealth {
+	width: calc(25% - 2px - 4px);
+	margin-left: 0px !important;
+} 
+#varArmor {
+	width: calc(25% - 4px - 4px);
+
+}
+#varHealth > .barIcon,
+#varArmor > .barIcon {
+	width: 10%;
+}
+#varStress {
+	margin-right: 0px !important;
+}
+
+#varHealth > #boxSetHealth {
+	box-shadow: 0px 0px 18px rgb(65, 155, 53);
+	background: rgb(65, 155, 53);
+}
+#varArmor > #boxSetArmour {
+	box-shadow: 0px 0px 18px rgb(53, 111, 204);
+	background: rgb(53, 111, 204);
+}
+
+#varHunger > #boxSetHunger {
+	box-shadow: 0px 0px 18px rgb(210, 155, 67);
+	background: rgb(210, 155, 67);
+}
+
+#varThirst > #boxSetThirst {
+	box-shadow: 0px 0px 18px rgb(101, 137, 182);
+	background: rgb(101, 137, 182);
+}
+
+#varOxygen > #boxSetOxygen {
+	box-shadow: 0px 0px 18px  rgb(76, 91, 117);
+	background: rgb(76, 91, 117);
+}
+
+#varStress > #boxSetStress {
+	box-shadow: 0px 0px 18px rgb(192, 59, 59);
+	background: rgb(192, 59, 59);
+}
+
+#varVoice > #boxSetVoice {
+	box-shadow: 0px 0px 18px rgb(59, 192, 59);
+	background: rgb(59, 192, 59);
+}
+
+.bar {
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: calc(12.5% - 4px - 4px);
+	height: 25.5px;
+	float: left;
+
+	/* padding: 2px; */
+	border: transparent;
+	margin-right: 1px;
+    margin-left: 2px;
+    z-index: 98;
+}
+
+#boxSetHealth, #boxSetArmour, #boxSetHunger, #boxSetThirst, #boxSetOxygen, #boxSetStress, #boxSetVoice {
+	width: 100%;
+	height: 25.5px;
+	border-radius: 5px;
+	background: rgba(110, 110, 110, 0.5);
+	position: relative;
+	bottom: 0;
+	z-index: 97;
+}
+
+.barIcon {
+	width: calc(12.5% - 4px - 4px);
+	height: 15.5px;
+	padding-top: 5px;
+	position: absolute;
+	z-index: 99;
+	/* padding: 5px; */
+}
